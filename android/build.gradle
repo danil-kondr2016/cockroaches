@@ -17,7 +17,7 @@ android {
         exclude 'META-INF/robovm/ios/robovm.xml'
     }
     defaultConfig {
-        applicationId "ru.myitschool.sundaycolob"
+        applicationId "ru.danila.cockroaches"
         minSdkVersion 14
         targetSdkVersion 30
         versionCode 1
@@ -86,7 +86,7 @@ task run(type: Exec) {
     }
 
     def adb = path + "/platform-tools/adb"
-    commandLine "$adb", 'shell', 'am', 'start', '-n', 'ru.myitschool.sundaycolob/ru.myitschool.sundaycolob.AndroidLauncher'
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'ru.danila.cockroaches/ru.danila.cockroaches.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"
